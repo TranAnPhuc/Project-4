@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Embed Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Project 4</title>
+  </head>
+  <body>
+    <header class="header header-fixed">
+      <div class="container">
+        <div class="header__top">
+          <a href="#!">
+            <img
+              src="./assets/img/E-sheba.svg"
+              alt="E-sheba"
+              class="header__logo"
+            />
+          </a>
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link navbar__link--active">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">About</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">Application</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#!" class="navbar__link">History</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__action">
+            <a href="#!" class="btn header__action--login"
+              ><span class="btn--animation">Log in</span></a
+            >
+            <a href="#!" class="btn header__action--signup"
+              ><span class="btn--animation">Sign up</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__blue-background">
+          <div class="hero__top">
+            <h1 class="hero__title">
+              Find & Search Your
+              <span class="hero__title--color"> Favourite </span>
+              Doctor
+            </h1>
+            <p class="hero__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit
+              viverra amet faucibus.
+            </p>
+          </div>
+          <div class="hero__search">
+            <div class="hero__search-item">
+              <img
+                src="./assets/img/hero_docter_name.svg"
+                alt="Doctor’s Name"
+                class="hero__logo-docter-name"
+              />
+              <select name="" id="hero__docter-name">
+                <option value="">Doctor’s Name</option>
+              </select>
+            </div>
+            <div class="hero__search-item">
+              <img
+                src="./assets/img/hero-location.svg"
+                alt="Location"
+                class="hero__location"
+              />
+              <select name="" id="hero__location">
+                <option value="">Location</option>
+              </select>
+            </div>
+            <a href="#!" class="hero__search-btn">
+              <div class="hero__circle">
+                <img
+                  src="./assets/img/hero-search.svg"
+                  alt="Search"
+                  class="hero__logo-search"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="hero__big-circle"></div>
+          <div class="hero__bottom">
+            <div class="hero__items">
+              <div class="hero__item">
+                <h2 class="hero__subtitle">24/7</h2>
+                <p class="hero__text">Online Support</p>
+              </div>
+              <div class="hero__item">
+                <h2 class="hero__subtitle">100+</h2>
+                <p class="hero__text">Doctors</p>
+              </div>
+              <div class="hero__item">
+                <h2 class="hero__subtitle">1M+</h2>
+                <p class="hero__text">Active Patients</p>
+              </div>
+            </div>
+            <img
+              src="./assets/img/hero__doctor.png"
+              alt="Doctor"
+              class="hero__img-doctor"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="our">
+        <div class="container">
+          <div class="our__content">
+            <h2 class="our__title">Our Consulting Specialists</h2>
+            <div class="our__list">
+              <!-- item 1 -->
+              <a href="#!">
+                <div class="our__item">
+                  <figure class="our__icon">
+                    <div class="our__background-img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="45"
+                        height="45"
+                        viewBox="0 0 45 45"
+                        fill="none"
+                        class="our__img"
+                      >
+                        <path
+                          d="M16.875 2.10938C16.875 0.944824 17.8154 0 18.9844 0H26.0156C27.1846 0 28.125 0.944824 28.125 2.10938C28.125 3.27393 27.1846 4.21875 26.0156 4.21875H24.6094V7.17363C27.3076 7.54102 29.7773 8.60273 31.8428 10.1689L33.9346 8.08154L32.9414 7.0875C32.1152 6.26309 32.1152 4.92803 32.9414 4.10449C33.7676 3.28008 35.1035 3.28008 35.9209 4.10449L40.8955 9.0791C41.7217 9.89648 41.7217 11.2324 40.8955 12.0586C40.0693 12.8848 38.7334 12.8848 37.916 12.0586L36.9141 11.0654L34.8311 13.1572C36.3955 15.2227 37.459 17.6924 37.8281 20.3906H40.7812V18.9844C40.7812 17.8154 41.7217 16.875 42.8906 16.875C44.0596 16.875 45 17.8154 45 18.9844V26.0156C45 27.1846 44.0596 28.125 42.8906 28.125C41.7217 28.125 40.7812 27.1846 40.7812 26.0156V24.6094H37.8281C37.459 27.3076 36.3955 29.7773 34.8311 31.8428L36.9141 33.9346L37.916 32.9414C38.7334 32.1152 40.0693 32.1152 40.8955 32.9414C41.7217 33.7676 41.7217 35.1035 40.8955 35.9209L35.9209 40.8955C35.1035 41.7217 33.7676 41.7217 32.9414 40.8955C32.1152 40.0693 32.1152 38.7334 32.9414 37.916L33.9346 36.9141L31.8428 34.8311C29.7773 36.3955 27.3076 37.459 24.6094 37.8281V40.7812H26.0156C27.1846 40.7812 28.125 41.7217 28.125 42.8906C28.125 44.0596 27.1846 45 26.0156 45H18.9844C17.8154 45 16.875 44.0596 16.875 42.8906C16.875 41.7217 17.8154 40.7812 18.9844 40.7812H20.3906V37.8281C17.6924 37.459 15.2227 36.3955 13.1572 34.8311L11.0654 36.9229L12.0586 37.916C12.8848 38.7334 12.8848 40.0693 12.0586 40.8955C11.2324 41.7217 9.89648 41.7217 9.0791 40.8955L4.10449 35.9209C3.28008 35.1035 3.28008 33.7676 4.10449 32.9414C4.92803 32.1152 6.26396 32.1152 7.0875 32.9414L8.08154 33.9346L10.1689 31.8428C8.60273 29.7773 7.54102 27.3076 7.17363 24.6094H4.21875V26.0156C4.21875 27.1846 3.27393 28.125 2.10938 28.125C0.944824 28.125 0 27.1846 0 26.0156V18.9844C0 17.8154 0.944824 16.875 2.10938 16.875C3.27393 16.875 4.21875 17.8154 4.21875 18.9844V20.3906H7.17363C7.54102 17.6924 8.60273 15.2227 10.1689 13.1572L8.08154 11.0654L7.0875 12.0586C6.26309 12.8848 4.92803 12.8848 4.10449 12.0586C3.28008 11.2324 3.28008 9.89648 4.10449 9.0791L9.0791 4.10449C9.89648 3.28096 11.2324 3.28096 12.0586 4.10449C12.8848 4.92803 12.8848 6.26396 12.0586 7.0875L11.0654 8.08154L13.1572 10.1689C15.2227 8.60273 17.6924 7.54102 20.3906 7.17363V4.21875H18.9844C17.8154 4.21875 16.875 3.2748 16.875 2.10938ZM16.875 15.4688C14.5459 15.4688 12.6562 17.3584 12.6562 19.6875C12.6562 22.0166 14.5459 23.9062 16.875 23.9062C19.2041 23.9062 21.0938 22.0166 21.0938 19.6875C21.0938 17.3584 19.2041 15.4688 16.875 15.4688ZM26.7188 28.8281C27.8877 28.8281 28.8281 27.8877 28.8281 26.7188C28.8281 25.5498 27.8877 24.6094 26.7188 24.6094C25.5498 24.6094 24.6094 25.5498 24.6094 26.7188C24.6094 27.8877 25.5498 28.8281 26.7188 28.8281Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <figcaption class="our__content-item">
+                      <h3 class="our__subtitle">Covid-19 Test</h3>
+                      <p class="our__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sem velit viverra amet faucibus.
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </a>
+              <!-- item 2 -->
+              <a href="#!">
+                <div class="our__item">
+                  <figure class="our__icon">
+                    <div class="our__background-img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="43"
+                        height="39"
+                        viewBox="0 0 43 39"
+                        fill="none"
+                        class="our__img"
+                      >
+                        <path
+                          d="M22.8845 1.40955C22.8845 1.03572 22.7386 0.67719 22.479 0.412848C22.2193 0.148506 21.8672 0 21.5 0C21.1328 0 20.7807 0.148506 20.521 0.412848C20.2614 0.67719 20.1155 1.03572 20.1155 1.40955V16.1901L18.731 17.1965V10.4871C18.731 7.80892 16.5989 5.63821 13.9683 5.63821C12.5174 5.63821 11.1356 6.39936 9.97266 7.30712C8.77923 8.24306 7.62732 9.48628 6.60556 10.7718C4.56758 13.3315 2.87572 16.2578 2.23055 17.7632C1.7432 18.9049 1.14233 21.0333 0.690986 23.4324C0.234102 25.8484 -0.09264 28.6675 0.0236579 31.2103C0.134418 33.6545 0.668834 36.2565 2.34408 37.7788C4.19931 39.4703 6.83539 39.3462 9.9339 37.7675L14.9042 35.2388C16.0541 34.6535 17.0212 33.7537 17.697 32.6404C18.3729 31.5271 18.731 30.2441 18.731 28.9353V26.7815C18.731 26.4076 18.5851 26.0491 18.3255 25.7848C18.0658 25.5204 17.7137 25.3719 17.3465 25.3719C16.9793 25.3719 16.6272 25.5204 16.3675 25.7848C16.1079 26.0491 15.962 26.4076 15.962 26.7815V28.9353C15.962 29.721 15.7469 30.4912 15.341 31.1594C14.935 31.8277 14.3542 32.3676 13.6637 32.7185L8.69616 35.2472C5.98808 36.6258 4.77803 36.2142 4.18823 35.6758C3.41291 34.971 2.89511 33.4176 2.78989 31.0806C2.68743 28.8394 2.97818 26.2599 3.41014 23.9624C3.84487 21.6507 4.39867 19.7591 4.76972 18.888C5.29583 17.6532 6.84647 14.9412 8.75707 12.545C9.70407 11.3553 10.7037 10.2925 11.6618 9.54267C12.6531 8.76459 13.4311 8.45731 13.9683 8.45731C14.4971 8.45731 15.0042 8.67116 15.3781 9.05181C15.752 9.43246 15.962 9.94874 15.962 10.4871V19.2094L11.0055 22.8178C10.7275 23.0425 10.5449 23.3672 10.4954 23.725C10.4458 24.0828 10.5331 24.4463 10.7392 24.7404C10.9454 25.0346 11.2545 25.2369 11.603 25.3056C11.9514 25.3743 12.3124 25.3042 12.6115 25.1098L21.5 18.6455L30.3885 25.1098C30.5361 25.2242 30.7047 25.3072 30.8845 25.354C31.0642 25.4007 31.2513 25.4102 31.4347 25.3819C31.6182 25.3536 31.7941 25.2881 31.9522 25.1892C32.1102 25.0903 32.2471 24.9601 32.3548 24.8062C32.4624 24.6524 32.5386 24.4782 32.5788 24.2938C32.619 24.1094 32.6224 23.9187 32.5888 23.733C32.5552 23.5472 32.4853 23.3702 32.3832 23.2126C32.2811 23.0549 32.1489 22.9197 31.9945 22.815L27.038 19.2094V10.4871C27.038 9.94874 27.248 9.43246 27.6219 9.05181C27.9958 8.67116 28.5029 8.45731 29.0317 8.45731C29.5689 8.45731 30.3469 8.76741 31.3382 9.54267C32.2963 10.2925 33.2932 11.3553 34.2457 12.5478C36.1508 14.9441 37.7014 17.6532 38.2303 18.888C38.6013 19.7591 39.1551 21.6507 39.5899 23.9624C40.0218 26.2571 40.3098 28.8394 40.2101 31.0806C40.1049 33.4176 39.5899 34.971 38.8118 35.6758C38.222 36.2114 37.0119 36.6258 34.3038 35.2472L29.3335 32.7185C28.6435 32.3672 28.0633 31.8271 27.6578 31.1589C27.2524 30.4907 27.0378 29.7207 27.038 28.9353V26.7815C27.038 26.4076 26.8921 26.0491 26.6325 25.7848C26.3728 25.5204 26.0207 25.3719 25.6535 25.3719C25.2863 25.3719 24.9341 25.5204 24.6745 25.7848C24.4149 26.0491 24.269 26.4076 24.269 26.7815V28.9353C24.269 30.2441 24.6271 31.5271 25.3029 32.6404C25.9788 33.7537 26.9459 34.6535 28.0957 35.2388L33.0661 37.7675C36.1674 39.3462 38.7979 39.4674 40.6559 37.7788C42.3312 36.2565 42.8656 33.6545 42.9763 31.2103C43.0926 28.6675 42.7659 25.8484 42.3118 23.4324C41.8577 21.0305 41.2596 18.9049 40.7667 17.7604C40.1243 16.2578 38.4324 13.3315 36.3944 10.7718C35.3699 9.48628 34.2208 8.24306 33.0273 7.30712C31.8644 6.39936 30.4826 5.63821 29.0317 5.63821C26.4011 5.63821 24.269 7.80892 24.269 10.4871V17.1965L22.8845 16.1901V1.40955Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <figcaption class="our__content-item">
+                      <h3 class="our__subtitle">Heart Lungs</h3>
+                      <p class="our__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sem velit viverra amet faucibus.
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </a>
+              <!-- item 3 -->
+              <a href="#!">
+                <div class="our__item">
+                  <figure class="our__icon">
+                    <div class="our__background-img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="45"
+                        height="43"
+                        viewBox="0 0 45 43"
+                        fill="none"
+                        class="our__img"
+                      >
+                        <path
+                          d="M2.83611 14.9145V14.8848C2.83607 11.9444 3.69888 9.06996 5.31569 6.62399C6.93249 4.17803 9.23085 2.27017 11.9208 1.14111C14.6108 0.0120444 17.5718 -0.287629 20.4303 0.279894C23.2888 0.847416 25.9167 2.25671 27.9825 4.32997C29.6079 3.52029 31.4234 3.17986 33.2285 3.34629C35.0336 3.51272 36.7579 4.17954 38.211 5.27307C39.6641 6.36659 40.7894 7.84426 41.4626 9.54282C42.1358 11.2414 42.3306 13.0947 42.0256 14.898C42.474 14.94 42.9091 15.0748 43.3036 15.2941C43.6981 15.5134 44.0436 15.8123 44.3185 16.1724C44.5935 16.5324 44.7919 16.9458 44.9015 17.3867C45.0111 17.8276 45.0295 18.2865 44.9555 18.7349C43.4742 27.7285 39.8102 33.421 33.9701 35.8157V38.0385C33.9701 39.3544 33.4522 40.6163 32.5303 41.5468C31.6084 42.4773 30.358 43 29.0542 43H15.9452C14.6414 43 13.391 42.4773 12.4691 41.5468C11.5472 40.6163 11.0293 39.3544 11.0293 38.0385V35.8157C5.18919 33.421 1.52521 27.7285 0.0438847 18.7349C-0.0276063 18.2984 -0.0116206 17.8519 0.0908956 17.4218C0.193412 16.9917 0.380376 16.5867 0.640722 16.2308C0.901068 15.8749 1.22951 15.5753 1.6066 15.3498C1.98369 15.1243 2.40178 14.9774 2.83611 14.9178V14.9145ZM6.11337 14.8848H9.39063C9.39063 12.6916 10.2538 10.5883 11.7904 9.03756C13.3269 7.48679 15.4108 6.61557 17.5838 6.61557C19.7567 6.61557 21.8407 7.48679 23.3772 9.03756C24.9137 10.5883 25.7769 12.6916 25.7769 14.8848H29.0542C29.0542 11.8144 27.8457 8.86976 25.6946 6.69868C23.5435 4.5276 20.6259 3.30789 17.5838 3.30789C14.5416 3.30789 11.6241 4.5276 9.47298 6.69868C7.32186 8.86976 6.11337 11.8144 6.11337 14.8848ZM12.6679 14.8848H22.4997C22.4997 13.5689 21.9818 12.3069 21.0598 11.3764C20.1379 10.446 18.8876 9.92325 17.5838 9.92325C16.28 9.92325 15.0296 10.446 14.1077 11.3764C13.1858 12.3069 12.6679 13.5689 12.6679 14.8848ZM35.1696 14.8848H38.6795C38.9269 13.9072 38.95 12.8856 38.747 11.8978C38.5439 10.9099 38.1201 9.98184 37.5079 9.18431C36.8956 8.38678 36.1111 7.74083 35.214 7.29567C34.317 6.85052 33.3311 6.61791 32.3315 6.61557C31.5449 6.61557 30.7977 6.75449 30.1029 7.00918C30.683 7.94856 31.1615 8.96071 31.5285 10.0225C32.1527 9.86622 32.8087 9.8984 33.4149 10.115C34.0212 10.3316 34.551 10.7231 34.9388 11.241C35.3266 11.7588 35.5552 12.3801 35.5962 13.0279C35.6372 13.6757 35.4889 14.3213 35.1696 14.8848ZM30.6928 36.3847H14.3065V38.0385C14.3065 38.4771 14.4792 38.8978 14.7865 39.2079C15.0938 39.5181 15.5106 39.6923 15.9452 39.6923H29.0542C29.4888 39.6923 29.9056 39.5181 30.2129 39.2079C30.5202 38.8978 30.6928 38.4771 30.6928 38.0385V36.3847ZM13.1529 33.077H31.8464C37.0442 31.3901 40.3345 26.6204 41.7241 18.1924H3.27526C4.66482 26.6204 7.95519 31.3901 13.1529 33.077Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <figcaption class="our__content-item">
+                      <h3 class="our__subtitle">Suppliment</h3>
+                      <p class="our__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sem velit viverra amet faucibus.
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </a>
+              <!-- item 4 -->
+              <a href="#!">
+                <div class="our__item">
+                  <figure class="our__icon">
+                    <div class="our__background-img">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="34"
+                        height="37"
+                        viewBox="0 0 34 37"
+                        fill="none"
+                        class="our__img"
+                      >
+                        <path
+                          d="M14.8889 0C18.5044 0.00023431 21.9962 1.30773 24.7132 3.6786C27.4303 6.04948 29.1869 9.32182 29.6554 12.8853L33.843 19.4324C34.1185 19.8634 34.0626 20.5054 33.4242 20.7792L29.7782 22.3295V27.75C29.7782 28.7313 29.3861 29.6724 28.688 30.3663C27.9899 31.0602 27.0431 31.45 26.0559 31.45H22.3354L22.3336 37H5.58313V30.1661C5.58313 27.9831 4.77166 25.9167 3.26784 24.0519C1.51417 21.8754 0.414763 19.2507 0.096275 16.4803C-0.222213 13.7098 0.253178 10.9063 1.46768 8.39264C2.68218 5.87903 4.58638 3.75759 6.96089 2.27275C9.33541 0.787907 12.0836 6.87446e-05 14.8889 0ZM14.8889 3.7C12.785 3.69991 10.7239 4.29061 8.94301 5.40403C7.1621 6.51746 5.73385 8.10832 4.8228 9.99335C3.91175 11.8784 3.55495 13.9809 3.79352 16.0587C4.03209 18.1365 4.85632 20.105 6.17125 21.7375C8.20736 24.2609 9.30545 27.1339 9.30545 30.1661V33.3H18.6113L18.615 27.75H26.0559V19.8912L28.9407 18.6628L26.0689 14.1765L25.9628 13.3588C25.6105 10.6873 24.2928 8.23425 22.2553 6.45712C20.2178 4.67998 17.5996 3.70004 14.8889 3.7ZM13.9025 10.6616L14.8889 11.6421L15.8753 10.6616C16.1757 10.3523 16.5351 10.1056 16.9324 9.93581C17.3298 9.76606 17.7571 9.67666 18.1896 9.67284C18.6221 9.66902 19.051 9.75085 19.4513 9.91355C19.8516 10.0763 20.2153 10.3166 20.5212 10.6205C20.827 10.9244 21.0689 11.2858 21.2328 11.6837C21.3966 12.0815 21.4791 12.5078 21.4755 12.9377C21.4718 13.3676 21.382 13.7924 21.2114 14.1874C21.0408 14.5824 20.7927 14.9397 20.4817 15.2385L14.8889 20.7996L9.29614 15.2385C8.98513 14.9397 8.73707 14.5824 8.56645 14.1874C8.39584 13.7924 8.30607 13.3676 8.3024 12.9377C8.29873 12.5078 8.38123 12.0815 8.54508 11.6837C8.70892 11.2858 8.95084 10.9244 9.25671 10.6205C9.56259 10.3166 9.92629 10.0763 10.3266 9.91355C10.7269 9.75085 11.1558 9.66902 11.5883 9.67284C12.0207 9.67666 12.4481 9.76606 12.8454 9.93581C13.2428 10.1056 13.6021 10.3523 13.9025 10.6616Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <figcaption class="our__content-item">
+                      <h3 class="our__subtitle">Mental Health</h3>
+                      <p class="our__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sem velit viverra amet faucibus.
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose-us">
+        <div class="container">
+          <div class="choose-us__content">
+            <figure class="img">
+              <img
+                src="./assets/img/choose-us.jpg"
+                alt="Why You Choose Us?"
+                class="choose-us__img"
+              />
+            </figure>
+            <div class="choose-us__right">
+              <h2 class="choose-us__title">Why You Choose Us?</h2>
+              <div class="choose-us__list">
+                <!-- item 1 -->
+                <div class="choose-us__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_131)">
+                      <path
+                        d="M14 0.5L4.7 10.7273L2 8.68225H0.5L4.7 15.5L15.5 0.5H14Z"
+                        fill="#0360D9"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_131">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="choose-us__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <!-- item 2 -->
+                <div class="choose-us__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_131)">
+                      <path
+                        d="M14 0.5L4.7 10.7273L2 8.68225H0.5L4.7 15.5L15.5 0.5H14Z"
+                        fill="#0360D9"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_131">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="choose-us__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <!-- item 3 -->
+                <div class="choose-us__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_131)">
+                      <path
+                        d="M14 0.5L4.7 10.7273L2 8.68225H0.5L4.7 15.5L15.5 0.5H14Z"
+                        fill="#0360D9"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_131">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="choose-us__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <!-- item 4 -->
+                <div class="choose-us__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_131)">
+                      <path
+                        d="M14 0.5L4.7 10.7273L2 8.68225H0.5L4.7 15.5L15.5 0.5H14Z"
+                        fill="#0360D9"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_131">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="choose-us__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <!-- item 5 -->
+                <div class="choose-us__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_131)">
+                      <path
+                        d="M14 0.5L4.7 10.7273L2 8.68225H0.5L4.7 15.5L15.5 0.5H14Z"
+                        fill="#0360D9"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_131">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="choose-us__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <a href="#!" class="choose-us__learn-more"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                >
+                  <path
+                    d="M13 6L1 6M7.75 11L13 6L7.75 1"
+                    stroke="#0360D9"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="member">
+        <div class="container">
+          <div class="member__content">
+            <div class="member__info">
+              <h2 class="member__title">
+                What
+                <span class="member__title--color">Our Member’s</span> Saying
+                About Us
+              </h2>
+              <p class="member__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+                velit viverra amet faucibus.
+              </p>
+              <div class="member__reviews">
+                <div class="member__list">
+                  <img
+                    src="./assets/img/member-1.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                  <img
+                    src="./assets/img/member-2.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                  <img
+                    src="./assets/img/member-3.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                  <img
+                    src="./assets/img/member-4.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                  <img
+                    src="./assets/img/member-5.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                  <img
+                    src="./assets/img/member-6.jpg"
+                    alt="Avatar"
+                    class="member__ava"
+                  />
+                </div>
+                <div class="member__total-reviews">100+ Reviews</div>
+              </div>
+            </div>
+            <article class="member-comment">
+              <div class="member-comment__top">
+                <div class="member-comment__user">
+                  <img
+                    src="./assets/img/member-4.jpg"
+                    alt="Jane Cooper"
+                    class="member-comment__ava"
+                  />
+                  <div class="member-comment__info-user">
+                    <h4 class="member-comment__name">Jane Cooper</h4>
+                    <p class="member-comment__date">12/4/17</p>
+                  </div>
+                </div>
+                <div class="member-comment__reviews">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="32"
+                    viewBox="0 0 34 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.1631 1.26548C15.8573 -0.346443 18.1427 -0.346442 18.8369 1.26548L21.9379 8.46632C22.2275 9.13867 22.8612 9.59911 23.5901 9.66672L31.3968 10.3908C33.1443 10.5528 33.8506 12.7265 32.532 13.8848L26.6419 19.0592C26.0919 19.5423 25.8499 20.2873 26.0108 21.0015L27.7346 28.6498C28.1205 30.3619 26.2715 31.7053 24.7624 30.8092L18.0211 26.8063C17.3917 26.4326 16.6083 26.4326 15.9789 26.8063L9.23757 30.8092C7.72851 31.7053 5.87952 30.3619 6.26539 28.6498L7.98918 21.0015C8.15013 20.2873 7.90806 19.5423 7.35809 19.0592L1.46795 13.8848C0.149427 12.7265 0.85568 10.5528 2.60322 10.3908L10.4099 9.66672C11.1388 9.59911 11.7725 9.13867 12.0621 8.46632L15.1631 1.26548Z"
+                      fill="#F5BF00"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="32"
+                    viewBox="0 0 34 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.1631 1.26548C15.8573 -0.346443 18.1427 -0.346442 18.8369 1.26548L21.9379 8.46632C22.2275 9.13867 22.8612 9.59911 23.5901 9.66672L31.3968 10.3908C33.1443 10.5528 33.8506 12.7265 32.532 13.8848L26.6419 19.0592C26.0919 19.5423 25.8499 20.2873 26.0108 21.0015L27.7346 28.6498C28.1205 30.3619 26.2715 31.7053 24.7624 30.8092L18.0211 26.8063C17.3917 26.4326 16.6083 26.4326 15.9789 26.8063L9.23757 30.8092C7.72851 31.7053 5.87952 30.3619 6.26539 28.6498L7.98918 21.0015C8.15013 20.2873 7.90806 19.5423 7.35809 19.0592L1.46795 13.8848C0.149427 12.7265 0.85568 10.5528 2.60322 10.3908L10.4099 9.66672C11.1388 9.59911 11.7725 9.13867 12.0621 8.46632L15.1631 1.26548Z"
+                      fill="#F5BF00"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="32"
+                    viewBox="0 0 34 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.1631 1.26548C15.8573 -0.346443 18.1427 -0.346442 18.8369 1.26548L21.9379 8.46632C22.2275 9.13867 22.8612 9.59911 23.5901 9.66672L31.3968 10.3908C33.1443 10.5528 33.8506 12.7265 32.532 13.8848L26.6419 19.0592C26.0919 19.5423 25.8499 20.2873 26.0108 21.0015L27.7346 28.6498C28.1205 30.3619 26.2715 31.7053 24.7624 30.8092L18.0211 26.8063C17.3917 26.4326 16.6083 26.4326 15.9789 26.8063L9.23757 30.8092C7.72851 31.7053 5.87952 30.3619 6.26539 28.6498L7.98918 21.0015C8.15013 20.2873 7.90806 19.5423 7.35809 19.0592L1.46795 13.8848C0.149427 12.7265 0.85568 10.5528 2.60322 10.3908L10.4099 9.66672C11.1388 9.59911 11.7725 9.13867 12.0621 8.46632L15.1631 1.26548Z"
+                      fill="#F5BF00"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="32"
+                    viewBox="0 0 34 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.1631 1.26548C15.8573 -0.346443 18.1427 -0.346442 18.8369 1.26548L21.9379 8.46632C22.2275 9.13867 22.8612 9.59911 23.5901 9.66672L31.3968 10.3908C33.1443 10.5528 33.8506 12.7265 32.532 13.8848L26.6419 19.0592C26.0919 19.5423 25.8499 20.2873 26.0108 21.0015L27.7346 28.6498C28.1205 30.3619 26.2715 31.7053 24.7624 30.8092L18.0211 26.8063C17.3917 26.4326 16.6083 26.4326 15.9789 26.8063L9.23757 30.8092C7.72851 31.7053 5.87952 30.3619 6.26539 28.6498L7.98918 21.0015C8.15013 20.2873 7.90806 19.5423 7.35809 19.0592L1.46795 13.8848C0.149427 12.7265 0.85568 10.5528 2.60322 10.3908L10.4099 9.66672C11.1388 9.59911 11.7725 9.13867 12.0621 8.46632L15.1631 1.26548Z"
+                      fill="#F5BF00"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="32"
+                    viewBox="0 0 34 32"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.1631 1.26548C15.8573 -0.346443 18.1427 -0.346442 18.8369 1.26548L21.9379 8.46632C22.2275 9.13867 22.8612 9.59911 23.5901 9.66672L31.3968 10.3908C33.1443 10.5528 33.8506 12.7265 32.532 13.8848L26.6419 19.0592C26.0919 19.5423 25.8499 20.2873 26.0108 21.0015L27.7346 28.6498C28.1205 30.3619 26.2715 31.7053 24.7624 30.8092L18.0211 26.8063C17.3917 26.4326 16.6083 26.4326 15.9789 26.8063L9.23757 30.8092C7.72851 31.7053 5.87952 30.3619 6.26539 28.6498L7.98918 21.0015C8.15013 20.2873 7.90806 19.5423 7.35809 19.0592L1.46795 13.8848C0.149427 12.7265 0.85568 10.5528 2.60322 10.3908L10.4099 9.66672C11.1388 9.59911 11.7725 9.13867 12.0621 8.46632L15.1631 1.26548Z"
+                      fill="#F5BF00"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <p class="member-comment__user-comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+                velit viverra amet faucibus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sem velit viverra amet faucibus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+                velit viverra amet faucibus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="future">
+        <div class="container">
+          <div class="future__content">
+            <div class="future__left">
+              <h2 class="future__title">
+                The Future <br />of
+                <span class="future__title--color">Quality Health</span>
+              </h2>
+              <p class="future__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
+                risus feugiat lectus risus sed ullamcorper. Auctor semper
+                fermentum volutpat integer vel. In rhoncus elementum nunc,
+                malesuada mi sed. Nibh est sit lobortis id semper.
+              </p>
+              <p class="future__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
+                risus feugiat lectus risus sed ullamcorper. Auctor semper
+                fermentum volutpat integer vel. In rhoncus elementum nunc,
+                malesuada mi sed. Nibh est sit lobortis id semper.
+              </p>
+              <p class="future__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec
+                risus feugiat lectus risus sed ullamcorper. sed. Nibh est sit
+                lobortis id semper.
+              </p>
+              <a href="#!" class="future__learn-more"
+                >Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                >
+                  <path
+                    d="M13 6L1 6M7.75 11L13 6L7.75 1"
+                    stroke="#0360D9"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg
+              ></a>
+            </div>
+            <figure class="future__img">
+              <img
+                src="./assets/img/future-1.jpg"
+                alt="The Future of Quality Health"
+                class="future__img-quality-health"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title">Subscribe To Our Newsletter</h2>
+            <div class="subscribe__block">
+              <a href="#!" class="subscribe__link">
+                <div class="subscribe__circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="12"
+                    viewBox="0 0 14 12"
+                    fill="none"
+                    class="subscribe__icon"
+                  >
+                    <path
+                      d="M13 6L1 6M7.75 11L13 6L7.75 1"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left">
+            <img
+              src="./assets/img/footer-logo.svg"
+              alt="E-sheba"
+              class="footer__logo"
+            />
+            <p class="footer__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus
+              feugiat lectus risus sed ullamcorper. Auctor semper fermentum
+            </p>
+            <p class="footer__desc">
+              volutpat integer vel. In rhoncus elementum nunc, malesuada mi sed.
+              Nibh est sit lobortis id semper.
+            </p>
+            <div class="footer__list-icon">
+              <a href="#!" class="footer__item-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#!" class="footer__item-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#!" class="footer__item-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__mid">
+            <h2 class="footer__title">Useful Links</h2>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Our Mission</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Our Team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <h2 class="footer__title">Address</h2>
+            <figure class="footer__img">
+              <img
+                src="./assets/img/footer-map.jpg"
+                alt="Address"
+                class="footer__img-map"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="footer__block"></div>
+        <p class="footer__copyright">&copy; 2022 All Right Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
